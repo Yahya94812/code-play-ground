@@ -19,10 +19,14 @@ int (*p)[3]=A; //it recive the pointer of array of 3 elements
 
 cout<<A<<" = "<<&A[0][0]<<endl;//where A return pointer to array and A[0][0] return pointer to int
 cout<<*A<<" = "<<A[0]<<" = "<<&A[0][0]<<endl;//A* and A[0] is the name of array from first element of A
-
+cout<<A+1<<" or "<<A[1]<<" or "<<&A[1]<<endl;
+cout<<*(A+1)<<" or "<<A[1]<<" or "<<&A[1][0]<<endl;//it return the pointer of int * or all are the name of second array element in parent array
 cout<<*(*(A+1))<<" or "<<*(A+1)[0]<<endl;//here *(A+1) repr the name of second array element of parent array
-
-    
+cout<<A[1]+2<<" or "<<*(A+1)+2<<" or "<<&A[1][2]<<endl;//here the A[1] or *(A+1) is the name or base address of second element array
+cout<<*(*A+2)<<" or "<<A[0][2]<<endl;//the A is int (*)[3] and A[1] is int*
+//A[i][j]=*(A[i] + j) or *(*(A+i)+j) 
+//int (*p)[3]=A it is the pointer of 1d array of 3 element
+cout<<*A<<" "<<A<<" "<<A[0]<<" "<<&A[0][0]<<endl;   
     
     return 0;
 }
