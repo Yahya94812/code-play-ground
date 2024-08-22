@@ -1,0 +1,27 @@
+The Time Complexity
+
+def:it is the function plot by taking amount of input data on x-axis and the no of instruction or( operation ) on y-axis
+time complexity of any function is not related to time require by this function to run
+notation : O means worst case
+for calculation big O of mathematical eq we need to eliminate all the constant including the coefficients and then get the variable of highest degree
+
+list of time complexity from better to worst:
+constant O(1):
+
+O(log(n)):we may find it in binary search 
+
+linear O(n):we may find it in linear search
+
+O(n*log(n)):we may find it in sorting
+
+quadratic O(n^2):we may find it in nested loops or operation on matrix
+
+O(2^n):we may find it in exponential recursion 
+
+O(n!):we may find it in permutation 
+
+
+O(n^n) is indeed worse than O(n!) and O(√n) is worse than O(log(n)) but better than O(n).
+
+in general 1s=10^8 operations and most of coding platforms offer only 1s for running or(execution of) the code
+if you have 5*10^4 width input data and you have an algorithm of O(n^2) then you are not able to successfully execute it as no of operation goes to 25*10^8 ;

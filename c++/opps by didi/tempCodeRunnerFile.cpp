@@ -1,1 +1,1 @@
-yahya
+int MyClass::count = 0;
